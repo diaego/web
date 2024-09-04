@@ -1,0 +1,36 @@
+This example of a draggable element is using the “Add a Chatbot“ customization.
+
+You can use the image settings panel inside the Editor to allow viewers to drag your images around the page. See this feature in use in templates like Fruit Bowl or Desert Real Estate. Additionally, you can extend this functionality to almost any element in the page through the use of a data-draggable attribute.
+
+While editing a Page, open Code View (via the Formatting Toolbar) and wrap your element with the following div:<div data-draggable>Draggable text</div>
+
+
+Create a Handle 
+
+If you want to have only a portion of an element act as the “handle” for something draggable, add an element nested inside the draggable container with a draggable_handle class: <div data-draggable>
+  <div class="draggable_handle">︎</div>
+  <iframe src="https://player.vimeo.com/video/259763732?background=1&autoplay=1&loop=1&autopause=0" width="400" height="250" frameborder="0">
+  </iframe>
+</div>
+This will allow only the draggable_handle element to drag a video so that it can still receive normal click behavior.
+
+You can style it like the above example by adding a .draggable_handle  selector into your CSS:.draggable_handle {
+    background: black;
+    color: white;
+}
+
+[data-draggable] .draggable_handle > a {
+    color:white;
+    display: inline-block;
+    padding: 0.1rem 0.0rem 0rem 0.35rem; 
+}
+
+
+
+Showing and Hiding
+
+Add links inside the Code View that will show and hide a draggable element:
+<a href="#" rel="show_draggable">Show draggable items</a>
+<a href="#" rel="hide_draggable">Hide draggable items</a>
+<a href="#" rel="toggle_draggable">Toggle draggable items</a>
+The presence of a show_draggable link will cause all draggable items be hidden until the link is clicked.
