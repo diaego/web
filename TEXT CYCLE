@@ -1,0 +1,36 @@
+This customization will cycle a list of words, fixed to the center of the screen, with each word rendered as large as possible. To use, first add the following script to your Custom HTML:
+
+<script src="https://static.cargo.site/scripts/loader.js" data-name="cycle"></script>
+
+Then paste this code into the CSS Editor:
+
+.cycle_content {
+    opacity: 0;
+    white-space: nowrap;
+    display: inline-block;
+    pointer-events: none;
+}
+ 
+.cycle_container {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    line-height: 1 !important;
+}
+
+
+Then edit the page where you want to add your cycling text, open Code View (via the Formatting Toolbar) and paste the following div:
+
+<div on-time="400" off-time="0" size="90%" random="false" loop="true" class="cycle">COMPACT DISCS FOR EVERY ONE</div>
+
+Each word will be displayed on its own; to display multiple words together, replace spaces with &nbsp;
+
+on-time The length of time (in milliseconds) to display each word
+off-time The length of time (in milliseconds) between displaying each word
+size The size of the text / the percentage of the browser's width to occupy.
+To make all text the same size, use a “rem” value (e.g. 4rem).
+
+random Whether to randomize the words every cycle
+loop Whether to display the cycle repeatedly.
