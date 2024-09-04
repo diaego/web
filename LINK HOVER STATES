@@ -1,0 +1,15 @@
+To create a hover state for text links, navigate to your Design tab and open the relevant Typography menu (Bodycopy, H1, H2, or Small) and click on the small blue ‘EDIT CSS’ link.
+
+The link selector is denoted by an a at the end of the selector’s name. For example, the Bodycopy link selector looks like this:
+
+[data-predefined-style="true"] bodycopy a {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+Look for a gray number at the top-right of the selector — clicking this will direct you to the respective line in the CSS Editor. To create a new hover selector,  paste the entire rule and add :hover just after the a as shown below.
+
+[data-predefined-style="true"] bodycopy a:hover {
+    color: rgba(15, 206, 131, 1);
+}
+
+In this example, the color property will change on hover. 
