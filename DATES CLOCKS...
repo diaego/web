@@ -1,0 +1,13 @@
+To start, paste the following script tag into your Custom HTML: <script src="https://static.cargo.site/scripts/loader.js" data-name="browser-stats"></script>
+
+
+Then edit the page to which you want to add numbers, open Code View (via the Formatting Toolbar) and add the following span tag:
+<span class="data-panel" infotype="time"></span>
+
+The ‘infotype’ attribute can be any of the following: date, time, date_and_time, window_width, window_height, and scroll.
+
+
+In addition, offset and multiplier attributes may be added to the window_width, window_height, or scroll elements:
+
+<span class="data-panel" infotype="scroll" offset="8050" multiplier="-2"></span>
+<span class="data-panel" infotype="window_width" offset="30" multiplier="1.5"></span>
