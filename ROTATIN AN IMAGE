@@ -1,0 +1,22 @@
+opening Code View while editing a page; then wrap the element you want to rotate with a div that has the class ‘rotate’.
+
+<div class="rotate"></div> 
+
+Then open the CSS Editor and paste in the following code:
+
+.rotate {
+    display: inline-block;
+    -webkit-animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+To adjust the speed of rotation, change the 4s attribute in the animation property. To reverse the direction of rotation, change rotate(360deg) to rotate(-360deg).
