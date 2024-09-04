@@ -1,0 +1,8 @@
+Default Menu — you can do so by clicking the ‘Edit CSS’ button at the bottom. Look for the rules with #site_menu in the selector name.
+
+For example, to create a Site Menu that fills the full width of your Cargo Site, add max-width: 100%; and change the width property to  width: 100%; in the #site_menu selector.
+
+Customize the Site Menu Button
+Open the Site Menu menu in the Design tab to change the positioning and icon of the Site Menu Button. To customize the Site Menu button further, click ‘EDIT CSS’, and look for the rules with #site_menu_button in the selector name.
+
+For example, to add a background color to the button, change the value of the background property in the [data-css-preset] #site_menu_button selector.
