@@ -1,0 +1,24 @@
+Open Code View while editing a page and wrap your element or text with a div that has the class ‘blink’.<div class="blink">Blinking Text</div> 
+
+Open the CSS Editor and paste in the following code:
+.blink {
+    animation: 1s infinite blink;
+    display: inline-block;
+}
+
+@keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
+}
+
+To alter the speed, adjust the 1s attribute in the animation property.
+
+To create the same effect on hover, replace the .blink rule with the following CSS: 
+.blink:hover {
+    animation: 1s infinite blink;
+    display: inline-block;
+}
