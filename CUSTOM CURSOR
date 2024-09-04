@@ -1,0 +1,23 @@
+To create a custom cursor upload an image to the Images menu inside of a page, then copy the image’s URL by clicking the ↗ button that appears when hovering over the image. Note: images larger than 128 by 128px may not be supported in some browsers.
+
+Then open the CSS Editor and paste in the following code. Replace the URL with the URL to your image.
+
+html {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+To change your cursor while hovering over images or links — add the following rules and use a different image URL.
+
+a {
+    cursor: url("https://static.cargo.site/images/left.png"), auto !important;
+}
+
+.content img {
+    cursor: url("https://static.cargo.site/images/left.png"), auto !important;
+}
+
+To apply the cursor to a specific page, copy the PID number at the bottom of the Admin panel while editing that page. Then paste the following code in your CSS Editor and replace ‘123456’ with your PID.
+
+body[data-page-id="123456"] {
+    cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
