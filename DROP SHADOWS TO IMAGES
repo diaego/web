@@ -1,0 +1,18 @@
+CSS Editor
+
+.content img { 
+    box-shadow: 5px 5px 35px rgba(0,0,0,0.3); 
+}
+
+[image-gallery="slideshow"] .gallery_card {
+    padding: 35px 35px 35px 35px;
+}
+
+The following rule can be added to exclude images from receiving the shadow. 
+
+.no-shadow img {
+    box-shadow: none !important;
+}
+
+To exclude an image, open Code View (via the Formatting Toolbar) and wrap the image like so:
+<div class="no-shadow">{image 1}</div>
