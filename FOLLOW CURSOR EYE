@@ -1,0 +1,15 @@
+First paste the following script tag into your Custom HTML: 
+
+<script src="https://static.cargo.site/scripts/loader.js" data-name="eyeroll"></script>
+
+Then add your eye images to a page, select one of them, click the Image Options button in the Formatting Toolbar, and type #eye in the Caption field. Do the same with the other eye.
+
+
+To change the speed and range of rotatation, add the range and/or rollspeed  attributes:
+
+#eye range:0.8
+#eye rollspeed:0.4 
+
+These values can be a decimal from 0 – 1.
+
+You can also add #eye to non-image elements by adding a “data-caption” via Code View:<h2 data-caption="#eye rollspeed:0.4">This element will rotate towards the cursor</h2>
